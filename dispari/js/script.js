@@ -7,18 +7,7 @@ function random5Num(){
 }
 // 3. ASSEGNARE ALLA VARIABILE IL RISULTATO DELLA FUNZIONE
 let numIA = random5Num()
-// 4. FUNZIONE CHE RENDE LA SCELTA DEL IA OPPOSTA ALL'UTENTE
-function againRand(x,y){
-    while(x%2 == y%2){
-        y = random5Num()
-    }
-    return y
-}
-//5. SE IL COMPUTER FA LA STESSA SCELTA DELL'UTENTE LO FA CAMBIARE DALLA FUNZIONE
-if(num%2==0 || num%2==1){
-    numIA = againRand(num, numIA)
-}
-// 6. FUNZIONE CHE SOMMA I DUE NUMERI, LI SOMMA E RITORNA IL RISULTATO
+// 4. FUNZIONE CHE SOMMA I DUE NUMERI, LI SOMMA E RITORNA IL RISULTATO
 function isEvenOdd(x,y){
     let sum = x+y
 
@@ -29,7 +18,7 @@ function isEvenOdd(x,y){
         return false
     }
 }
-// 7. STAMPA IL RISULTATO DELLA FUNZIONE
+// 5. STAMPA IL RISULTATO DELLA FUNZIONE
 if(isEvenOdd(num, numIA)){
     console.log(`${num} e ${numIA}. Ha vinto PARI`)
 }
